@@ -19,10 +19,10 @@
     <div class="panel panel-default">
       <div class="panel-heading clearfix">
         <strong>
-          <span class="glyphicon glyphicon-th"></span>
+          <span class="glyphicon glyphicon-user"></span>
           <span>Usuarios</span>
        </strong>
-         <a href="add_user.php" class="btn btn-info pull-right">Agregar usuario</a>
+         <a href="add_user.php" class="btn btn-info pull-right" style="background-color: #bb1b0b; color: white">Agregar usuario</a>
       </div>
      <div class="panel-body">
       <table class="table table-bordered table-striped">

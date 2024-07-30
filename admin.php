@@ -15,6 +15,13 @@
 ?>
 <?php include_once('layouts/header.php'); ?>
 
+<link rel=stylesheet href="libs/css/styles.css">
+
+<div class="text-center">
+<h1>Control de entradas y salidas Roma</h1>
+<p>COMEDEL, ALMACEN ZACATECAS</p>
+</div>
+
 <div class="row">
    <div class="col-md-6">
      <?php echo display_msg($msg); ?>
@@ -22,7 +29,7 @@
 </div>
   <div class="row">
     <div class="col-md-3">
-       <div class="panel panel-box clearfix">
+       <div class="panel panel-box custom-panel-heigth">
          <div class="panel-icon pull-left bg-green">
           <i class="glyphicon glyphicon-user"></i>
         </div>
@@ -33,20 +40,20 @@
        </div>
     </div>
     <div class="col-md-3">
-       <div class="panel panel-box clearfix">
+       <div class="panel panel-box custom-panel-heigth">
          <div class="panel-icon pull-left bg-red">
           <i class="glyphicon glyphicon-list"></i>
         </div>
         <div class="panel-value pull-right">
           <h2 class="margin-top"> <?php  echo $c_categorie['total']; ?> </h2>
-          <p class="text-muted">Categorías</p>
+          <p class="text-muted">Categorias</p>
         </div>
        </div>
     </div>
     <div class="col-md-3">
-       <div class="panel panel-box clearfix">
+       <div class="panel panel-box custom-panel-heigth">
          <div class="panel-icon pull-left bg-blue">
-          <i class="glyphicon glyphicon-shopping-cart"></i>
+          <i class="glyphicon glyphicon-plus"></i>
         </div>
         <div class="panel-value pull-right">
           <h2 class="margin-top"> <?php  echo $c_product['total']; ?> </h2>
@@ -55,13 +62,13 @@
        </div>
     </div>
     <div class="col-md-3">
-       <div class="panel panel-box clearfix">
+       <div class="panel panel-box custom-panel-heigth">
          <div class="panel-icon pull-left bg-yellow">
-          <i class="glyphicon glyphicon-usd"></i>
+          <i class="glyphicon glyphicon-arrow-up"></i>
         </div>
         <div class="panel-value pull-right">
           <h2 class="margin-top"> <?php  echo $c_sale['total']; ?></h2>
-          <p class="text-muted">Ventas</p>
+          <p class="text-muted">Salidas</p>
         </div>
        </div>
     </div>
@@ -73,16 +80,16 @@
        <div class="panel-heading">
          <strong>
            <span class="glyphicon glyphicon-th"></span>
-           <span>Productos más vendidos</span>
+           <span>Ulimos recibidos</span>
          </strong>
        </div>
        <div class="panel-body">
          <table class="table table-striped table-bordered table-condensed">
           <thead>
            <tr>
-             <th>Título</th>
-             <th>Total vendido</th>
-             <th>Cantidad total</th>
+             <th>Producto</th>
+             <th>Cantidad</th>
+             <th>Fecha</th>
            <tr>
           </thead>
           <tbody>
@@ -103,7 +110,7 @@
         <div class="panel-heading">
           <strong>
             <span class="glyphicon glyphicon-th"></span>
-            <span>ÚLTIMAS VENTAS</span>
+            <span>ÚLTIMAS SALIDAS</span>
           </strong>
         </div>
         <div class="panel-body">
@@ -113,7 +120,7 @@
            <th class="text-center" style="width: 50px;">#</th>
            <th>Producto</th>
            <th>Fecha</th>
-           <th>Venta total</th>
+           <th>Cantidad</th>
          </tr>
        </thead>
        <tbody>
@@ -139,8 +146,8 @@
     <div class="panel panel-default">
       <div class="panel-heading">
         <strong>
-          <span class="glyphicon glyphicon-th"></span>
-          <span>Productos recientemente añadidos</span>
+          <span class="glyphicon glyphicon-bullhorn"></span>
+          <span>Producto mas escaso</span>
         </strong>
       </div>
       <div class="panel-body">

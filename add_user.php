@@ -43,7 +43,7 @@
     <div class="panel panel-default">
       <div class="panel-heading">
         <strong>
-          <span class="glyphicon glyphicon-th"></span>
+          <span class="glyphicon glyphicon-user"></span>
           <span>Agregar usuario</span>
        </strong>
       </div>
@@ -71,7 +71,7 @@
                 </select>
             </div>
             <div class="form-group clearfix">
-              <button type="submit" name="add_user" class="btn btn-primary">Guardar</button>
+              <button type="submit" name="add_user" class="btn btn-primary" style="background-color: #bb1b0b; color: white">Guardar</button>
             </div>
         </form>
         </div>

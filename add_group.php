@@ -55,7 +55,7 @@
         </div>
         <div class="form-group">
               <label for="level" class="control-label">Nivel del grupo</label>
-              <input type="number" class="form-control" name="group-level">
+              <input type="number" class="form-control" name="group-level" min="1" max="3" step="1">
         </div>
         <div class="form-group">
           <label for="status">Estado</label>
@@ -65,7 +65,7 @@
             </select>
         </div>
         <div class="form-group clearfix">
-                <button type="submit" name="add" class="btn btn-info">Guardar</button>
+                <button type="submit" name="add" class="btn btn-info" style="background-color: #bb1b0b; color: white">Guardar</button>
         </div>
     </form>
 </div>

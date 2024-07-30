@@ -1,8 +1,8 @@
 <?php
   $page_title = 'Lista de grupos';
   require_once('includes/load.php');
-  // Checkin What level user has permission to view this page
-   page_require_level(1);
+
+  page_require_level(1);
   $all_groups = find_all('user_groups');
 ?>
 <?php include_once('layouts/header.php'); ?>
@@ -16,18 +16,18 @@
     <div class="panel panel-default">
     <div class="panel-heading clearfix">
       <strong>
-        <span class="glyphicon glyphicon-th"></span>
-        <span>Grupos</span>
+        <span class="glyphicon glyphicon-user"></span>
+        <span>Usuarios</span>
      </strong>
-       <a href="add_group.php" class="btn btn-info pull-right btn-sm"> Agregar grupo</a>
+       <a href="add_group.php" class="btn btn-info pull-right btn-sm" style="background-color: #bb1b0b; color: white"> Agregar usuario</a>
     </div>
      <div class="panel-body">
       <table class="table table-bordered">
         <thead>
           <tr>
             <th class="text-center" style="width: 50px;">#</th>
-            <th>Nombre del grupo</th>
-            <th class="text-center" style="width: 20%;">Nivel del grupo</th>
+            <th>Nombre del usuario</th>
+            <th class="text-center" style="width: 20%;">Nivel de acceso</th>
             <th class="text-center" style="width: 15%;">Estado</th>
             <th class="text-center" style="width: 100px;">Acciones</th>
           </tr>

@@ -39,7 +39,7 @@
       <div class="panel panel-default">
         <div class="panel-heading">
           <strong>
-            <span class="glyphicon glyphicon-th"></span>
+            <span class="glyphicon glyphicon-plus-sign"></span>
             <span>Agregar categoría</span>
          </strong>
         </div>
@@ -48,7 +48,7 @@
             <div class="form-group">
                 <input type="text" class="form-control" name="categorie-name" placeholder="Nombre de la categoría" required>
             </div>
-            <button type="submit" name="add_cat" class="btn btn-primary">Agregar categoría</button>
+            <button type="submit" name="add_cat" class="btn btn-primary" style="background-color: #bb1b0b; color: white">Agregar categoría</button>
         </form>
         </div>
       </div>
@@ -57,7 +57,7 @@
     <div class="panel panel-default">
       <div class="panel-heading">
         <strong>
-          <span class="glyphicon glyphicon-th"></span>
+          <span class="glyphicon glyphicon-th-list"></span>
           <span>Lista de categorías</span>
        </strong>
       </div>
